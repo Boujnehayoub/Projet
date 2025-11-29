@@ -1,0 +1,455 @@
+/* ============================================
+   STYLES CSS - Portfolio Ayoub Boujneh
+   ============================================ */
+
+/* Variables CSS */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --dark-bg: #1a1a2e;
+  --darker-bg: #16213e;
+  --card-bg: #0f3460;
+  --text-light: #e4e4e4;
+  --text-muted: #adb5bd;
+  --accent-color: #00d4ff;
+}
+
+/* Reset et Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--darker-bg) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.profile-image-container {
+  position: relative;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid var(--primary-color);
+  box-shadow: 0 0 30px rgba(13, 110, 253, 0.3);
+}
+
+.social-links a {
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.social-links a:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-3px);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bg-dark {
+  background-color: var(--card-bg) !important;
+}
+
+/* About Section */
+.about-section {
+  background-color: var(--dark-bg);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--primary-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 3px solid var(--dark-bg);
+}
+
+.timeline-date {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Progress Bars */
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--darker-bg);
+}
+
+.progress-bar {
+  border-radius: 5px;
+  transition: width 1s ease;
+}
+
+/* Skills Section */
+.skill-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* Quiz Section */
+.quiz-container {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.question-card {
+  background: var(--darker-bg);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.question-number {
+  background: var(--primary-color);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-check {
+  padding: 10px 15px 10px 40px;
+  margin-bottom: 10px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.form-check:hover {
+  background: rgba(13, 110, 253, 0.2);
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.correct-answer {
+  background-color: rgba(25, 135, 84, 0.3) !important;
+  border-left: 4px solid #198754;
+}
+
+.wrong-answer {
+  background-color: rgba(220, 53, 69, 0.3) !important;
+  border-left: 4px solid #dc3545;
+}
+
+/* Results Section */
+#quiz-results {
+  background: var(--darker-bg);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.score-display {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Contact Form */
+.contact-form {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--darker-bg);
+  border: 1px solid var(--secondary-color);
+  color: var(--text-light);
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--darker-bg);
+  border-color: var(--primary-color);
+  color: var(--text-light);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-outline-light {
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-weight: 600;
+}
+
+/* Event Cards */
+.event-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Passion Cards */
+.passion-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.passion-card:hover {
+  background: var(--primary-color);
+}
+
+.passion-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.passion-card:hover .passion-icon {
+  color: white;
+}
+
+/* Testimonial Section */
+.testimonial-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  font-size: 100px;
+  color: var(--primary-color);
+  opacity: 0.2;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: Georgia, serif;
+}
+
+/* Footer */
+footer {
+  background-color: var(--darker-bg) !important;
+}
+
+footer a {
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Page Headers */
+.page-header {
+  background: linear-gradient(135deg, var(--darker-bg) 0%, var(--card-bg) 100%);
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+/* Badge Skills */
+.badge-skill {
+  background: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Subject Cards */
+.subject-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.subject-card h5 {
+  color: var(--accent-color);
+}
+
+/* Quality Tags */
+.quality-tag {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 5px;
+  display: inline-block;
+  font-weight: 500;
+}

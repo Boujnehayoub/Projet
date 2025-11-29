@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Ayoub Boujneh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-primary">Ayoub</span> Boujneh
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiences.html">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matieres.html">Matières</a></li>
+                    <li class="nav-item"><a class="nav-link" href="passions.html">Passions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="temoignage.html">Témoignage</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Quiz Technologie & Data</h1>
+            <p class="lead text-secondary">Testez vos connaissances en informatique</p>
+            <div class="title-underline"></div>
+        </div>
+    </header>
+
+    <!-- Quiz Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="quiz-container">
+                        <form id="quizForm">
+                            <!-- Question 1 -->
+                            <div class="question-card" data-question="1">
+                                <h5><span class="question-number">1</span>Quel langage est principalement utilisé pour l'analyse de données ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                                    <label class="form-check-label" for="q1a">Java</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                                    <label class="form-check-label" for="q1b">Python</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                                    <label class="form-check-label" for="q1c">C++</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1d" value="d">
+                                    <label class="form-check-label" for="q1d">Ruby</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="question-card" data-question="2">
+                                <h5><span class="question-number">2</span>Qu'est-ce que SQL ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                                    <label class="form-check-label" for="q2a">Un système d'exploitation</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                                    <label class="form-check-label" for="q2b">Un langage de requête pour bases de données</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                                    <label class="form-check-label" for="q2c">Un framework JavaScript</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2d" value="d">
+                                    <label class="form-check-label" for="q2d">Un outil de design</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="question-card" data-question="3">
+                                <h5><span class="question-number">3</span>Quelle bibliothèque Python est utilisée pour la manipulation de données ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                                    <label class="form-check-label" for="q3a">Django</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                                    <label class="form-check-label" for="q3b">Flask</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                                    <label class="form-check-label" for="q3c">Pandas</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3d" value="d">
+                                    <label class="form-check-label" for="q3d">PyGame</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div class="question-card" data-question="4">
+                                <h5><span class="question-number">4</span>Que signifie HTML ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                                    <label class="form-check-label" for="q4a">HyperText Markup Language</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                                    <label class="form-check-label" for="q4b">High Tech Modern Language</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                                    <label class="form-check-label" for="q4c">Home Tool Markup Language</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q4" id="q4d" value="d">
+                                    <label class="form-check-label" for="q4d">Hyper Transfer Mail Link</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 5 -->
+                            <div class="question-card" data-question="5">
+                                <h5><span class="question-number">5</span>Quel est le rôle du CSS ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                                    <label class="form-check-label" for="q5a">Gérer les bases de données</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                                    <label class="form-check-label" for="q5b">Styliser les pages web</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                                    <label class="form-check-label" for="q5c">Programmer côté serveur</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5d" value="d">
+                                    <label class="form-check-label" for="q5d">Créer des animations 3D</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 6 -->
+                            <div class="question-card" data-question="6">
+                                <h5><span class="question-number">6</span>MongoDB est quel type de base de données ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                                    <label class="form-check-label" for="q6a">Relationnelle</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                                    <label class="form-check-label" for="q6b">NoSQL</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                                    <label class="form-check-label" for="q6c">Graphique</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6d" value="d">
+                                    <label class="form-check-label" for="q6d">Hiérarchique</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 7 -->
+                            <div class="question-card" data-question="7">
+                                <h5><span class="question-number">7</span>Qu'est-ce que Git ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                                    <label class="form-check-label" for="q7a">Un éditeur de code</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                                    <label class="form-check-label" for="q7b">Un système de contrôle de version</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                                    <label class="form-check-label" for="q7c">Un langage de programmation</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7d" value="d">
+                                    <label class="form-check-label" for="q7d">Un serveur web</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 8 -->
+                            <div class="question-card" data-question="8">
+                                <h5><span class="question-number">8</span>Quel outil est utilisé pour tester les API REST ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                                    <label class="form-check-label" for="q8a">Photoshop</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                                    <label class="form-check-label" for="q8b">Postman</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                                    <label class="form-check-label" for="q8c">Excel</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8d" value="d">
+                                    <label class="form-check-label" for="q8d">Word</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 9 -->
+                            <div class="question-card" data-question="9">
+                                <h5><span class="question-number">9</span>Que permet Docker ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                                    <label class="form-check-label" for="q9a">Éditer des images</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                                    <label class="form-check-label" for="q9b">Conteneuriser des applications</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9c" value="c">
+                                    <label class="form-check-label" for="q9c">Créer des présentations</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9d" value="d">
+                                    <label class="form-check-label" for="q9d">Gérer les emails</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 10 -->
+                            <div class="question-card" data-question="10">
+                                <h5><span class="question-number">10</span>Quel framework CSS est utilisé pour créer des sites responsive ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10a" value="a">
+                                    <label class="form-check-label" for="q10a">jQuery</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10b" value="b">
+                                    <label class="form-check-label" for="q10b">Bootstrap</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10c" value="c">
+                                    <label class="form-check-label" for="q10c">React</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10d" value="d">
+                                    <label class="form-check-label" for="q10d">Node.js</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 11 -->
+                            <div class="question-card" data-question="11">
+                                <h5><span class="question-number">11</span>Qu'est-ce que le Machine Learning ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q11" id="q11a" value="a">
+                                    <label class="form-check-label" for="q11a">Un type de hardware</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q11" id="q11b" value="b">
+                                    <label class="form-check-label" for="q11b">L'apprentissage automatique par les machines</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q11" id="q11c" value="c">
+                                    <label class="form-check-label" for="q11c">Un logiciel de bureautique</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q11" id="q11d" value="d">
+                                    <label class="form-check-label" for="q11d">Un réseau social</label>
+                                </div>
+                            </div>
+
+                            <!-- Question 12 -->
+                            <div class="question-card" data-question="12">
+                                <h5><span class="question-number">12</span>Quelle méthode agile utilise des "sprints" ?</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q12" id="q12a" value="a">
+                                    <label class="form-check-label" for="q12a">Waterfall</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q12" id="q12b" value="b">
+                                    <label class="form-check-label" for="q12b">Scrum</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q12" id="q12c" value="c">
+                                    <label class="form-check-label" for="q12c">V-Model</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="q12" id="q12d" value="d">
+                                    <label class="form-check-label" for="q12d">RAD</label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center mt-4">
+                                <button type="button" id="submitQuiz" class="btn btn-primary btn-lg px-5">
+                                    <i class="bi bi-check-circle me-2"></i>Valider le Quiz
+                                </button>
+                                <button type="button" id="resetQuiz" class="btn btn-outline-secondary btn-lg px-5 ms-3" style="display: none;">
+                                    <i class="bi bi-arrow-clockwise me-2"></i>Recommencer
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Results Section -->
+                        <div id="quiz-results" style="display: none;">
+                            <div class="text-center">
+                                <h3 class="text-primary mb-3">Résultats du Quiz</h3>
+                                <div class="score-display" id="scoreDisplay">0/12</div>
+                                <p class="lead" id="scoreMessage"></p>
+                            </div>
+                            <hr class="my-4">
+                            <h5 class="text-primary mb-3"><i class="bi bi-list-check me-2"></i>Réponses Correctes :</h5>
+                            <div id="correctAnswers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Ayoub Boujneh. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="mailto:ayoubboujneh9@gmail.com" class="text-light me-3"><i class="bi bi-envelope-fill"></i></a>
+                    <a href="https://github.com/ayoubboujneh" class="text-light me-3" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://linkedin.com/in/ayoubboujneh" class="text-light" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
